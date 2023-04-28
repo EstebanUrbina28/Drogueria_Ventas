@@ -1,0 +1,191 @@
+
+$card-user-container-margin-bottom: 1rem;
+$card-user-container-radius: $global-radius;
+$card-user-container-background: $white;
+$card-user-container-color: $black;
+$card-user-container-image-size: rem-calc(190);
+
+.card-user-container {
+  margin-bottom: $card-user-container-margin-bottom;
+  background-color: $card-user-container-background;
+  color: $black;
+  overflow: hidden;
+  padding: 0;
+  border-radius: $card-user-container-radius;
+
+  .card-user-avatar {
+    .user-image {
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      width: $card-user-container-image-size;
+      height: $card-user-container-image-size;
+      padding: rem-calc(15);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .card-user-bio {
+    padding: 1rem;
+    text-align: center;
+
+    .location {
+      display: inline-block;
+      margin: 0 rem-calc(15);
+      color: $secondary-color;
+      font-size: rem-calc(14);
+    }
+
+    .location-icon,
+    .location-text {
+      display: inline-block;
+      padding: 0 rem-calc(5);
+    }
+  }
+
+  .card-user-social {
+    background: $light-gray;
+    padding: 1rem;
+    text-align: center;
+
+    ul {
+      display: inline-block;
+
+      li {
+        margin: 0 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .card-user-button {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+
+
+$alert-box-opacity: 0.2;
+
+.alert-box {
+  padding-right: 3.25rem;
+  width: 100%;
+
+  &.callout {
+    color: $white;
+    font-weight: bold;
+  }
+
+  &.alert {
+    border: 3px solid $alert-color;
+    border-radius: 5px;
+    background-color:rgba($alert-color, $alert-box-opacity);
+  }
+
+  &.warning {
+    border: 3px solid $warning-color;
+    border-radius: 5px;
+    background-color:rgba($warning-color, $alert-box-opacity);
+  }
+
+  &.success {
+    border: 3px solid $success-color;
+    border-radius: 5px;
+    background-color:rgba($success-color, $alert-box-opacity);
+  }
+
+  &.info {
+    border: 3px solid $primary-color;
+    border-radius: 5px;
+    background-color:rgba($primary-color, $alert-box-opacity);
+  }
+
+  i {
+    border: 2px solid $white;
+    border-radius: 50%;
+    padding: .3em .325em;
+    margin-right: 0.5rem;
+  }
+
+  .close-button {
+    color: rgba($white, 0.5);
+    font-size: 2rem;
+    @include vertical-center;
+    right: 1rem;
+    font-weight: bold;
+  }
+}
+
+
+.sign-in-form {
+  padding: 1rem 1.5em;
+  border-radius: .5rem;
+  background-color: #3d454f;
+
+  h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase
+  }
+
+  label {
+    text-transform: uppercase;
+    color: #adadad;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    color: white;
+  }
+
+  input:focus {
+    opacity: .8;
+  }
+}
+
+.sign-in-form-username,
+.sign-in-form-password {
+  border-radius: 30px;
+  border: none;
+  opacity: .1;
+  transition: all ease .4s;
+}
+
+.sign-in-form-button {
+  border-radius: 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 1rem;
+  transition: all ease .4s;
+
+  &:hover {
+    background-color: #44c8ed;
+    border-color: #44c8ed;
+  }
+}
+
+$social-brand-facebook: #3b5998;
+$social-brand-twitter: #55acee;
+$social-brand-google-plus: #dd4b39;
+
+$social-icon-button-bg: none;
+$social-icon-button-font-size: 2rem;
+$social-icon-button-size: 3.6rem;
+$social-icon-button-space-between: 0.25rem;
+$social-icon-button-transition: all 0.3s ease-in-out;
